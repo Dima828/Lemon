@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --font-family: "Be Vietnam Pro", sans-serif;
+    --second-family: "Outfit", sans-serif;
+
+    --color-white: #FFF;
+    --color-dark: #000;
+    --color-gray: #E8E7EE;
+    --color-dark-alt: #1C2436;
+    --color-dark-gray: #454C5F;
+    --color-white-alt: #F6F6F9;
+    --color-green: #BFE03E;
+    --color-green-alt: #EBFA9E;
+
+    --transition: all .2s linear;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: var(--font-family);
+    color: var(--color-dark-alt);
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+ul,
+ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Banner */
+
+.banner{
+    background: url(/images/banner/banner_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    max-width: 100%;
+}
+
+.banner__desc{
+    line-height: 1.2;
+    font-size: 12px;
+    color: var(--color-white);
+    letter-spacing: .02em;
+    padding-block: 16px;
+}
+
+/* Header */
+
+.header{
+    padding-block: 25px;
+    border-bottom: 1px solid var(--color-white-alt);
+    min-height: 90px;
+    align-content: center;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__list{
+    display: flex;
+    column-gap: 40px;
+}
+
+.header__link{
+    padding-block: 10px;
+    transition: var(--transition);
+}
+
+.is__acctive{
+    color: var(--color-dark);
+}
+
+.purchase__link{
+    border: 1px solid var(--color-gray);
+    padding: 9px 25px;
+    transition: var(--transition);
+}
+
+.header__link:hover{
+    color: var(--color-dark-gray);
+}
+
+.purchase__link:hover{
+    background-color: var(--color-gray);
+}
+
+.purchase__link:active{
+    background-color: var(--color-dark-gray);
+}
+
+
+@media (max-width: 700px){
+    .header__inner{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .header__list{
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+}   
