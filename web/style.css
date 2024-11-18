@@ -53,6 +53,7 @@ html{
     font-weight: 400;
     font-size: clamp(24px, 3.12vw, 45px);
     margin-bottom: 40px;
+    letter-spacing: 0.02em;
 }
 
 .image{
@@ -69,6 +70,14 @@ ol{
 a{
     text-decoration: none;
     color: currentColor;
+}
+
+hr{
+    border: 0;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-gray);
 }
 
 /* Banner */
@@ -164,6 +173,108 @@ a{
     font-size: clamp(13px, 1.25vw, 18px);
     line-height: 1.8;
     letter-spacing: .02em;
+}
+
+/* Collections */
+
+
+.collections{
+    max-width: 1060px;
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 160px;
+    padding-inline: 15px;
+}
+
+.collection__content{
+    display: flex;
+    column-gap: 140px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.collection__title{
+    width: 432px;
+    font-size: clamp(32px, 3.05vw, 44px);
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.collection__desc{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    width: 432px;
+}
+
+.collections__list{
+    display: flex;
+    column-gap: 40px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.collection__item{
+    border: 1px solid #e8e7ee;
+    width: 100%;
+}
+
+.collection__item-content{
+    padding: 41px;
+}
+
+.collection__image{
+    margin-bottom: 32px;
+}
+
+.collection__card-title{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.collection__card-desc{
+    font-size: clamp(13px, 1.25vw, 16px);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-dark-gray);
+}
+
+.collection__link{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    background-color: var(--color-white-alt);
+    width: 100%;
+    padding-block: 16px;
+    transition: var(--transition);
+}
+
+.collection__arrow{
+    position: absolute;
+    right: 15px;
+    top: 28%;
+}
+
+@media (max-width:900px) {
+    .collection__content{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .collection__title,
+    .collection__desc{
+        width: 100%;
+    }
+
+    .collections__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 700px){
