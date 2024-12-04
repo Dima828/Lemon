@@ -260,6 +260,10 @@ hr{
 
 /* Landing */
 
+.landing{
+    margin-bottom: 60px;
+}
+
 .landing__content{
     text-align: center;
 }
@@ -275,10 +279,32 @@ hr{
     padding: 75px 47px;
 }
 
+/* Company */
+
+.company__content{
+    text-align: center;
+}
+
+.company__block-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.company__image{
+    padding: 75px 47px;
+}
+
+
 @media (max-width: 1120px) {
     .landing__image{
         width: 100%;
-        height: auto;
+        padding-block: 0;
+    }
+
+    .company__image{
+        width: 100%;
         padding-block: 0;
     }
 }
