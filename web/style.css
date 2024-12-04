@@ -258,6 +258,30 @@ hr{
     top: 28%;
 }
 
+/* Landing */
+
+.landing__content{
+    text-align: center;
+}
+
+.landing__block-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.landing__image{
+    padding: 75px 47px;
+}
+
+@media (max-width: 1120px) {
+    .landing__image{
+        width: 100%;
+        height: auto;
+        padding-block: 0;
+    }
+}
 @media (max-width:900px) {
     .collection__content{
         flex-direction: column;
