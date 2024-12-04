@@ -342,6 +342,26 @@ hr{
     padding: 75px 47px;
 }
 
+/* Blog */
+
+.blog{
+    margin-bottom: 60px;
+}
+
+.blog__content{
+    text-align: center;
+}
+
+.blog__block-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.blog__image{
+    padding: 75px 47px;
+}
 
 @media (max-width: 1120px) {
     .landing__image{
@@ -363,6 +383,12 @@ hr{
         width: 100%;
         padding-block: 0;
     }
+
+    .blog__image{
+        width: 100%;
+        padding-block: 0;
+    }
+    
     
 }
 @media (max-width:900px) {
