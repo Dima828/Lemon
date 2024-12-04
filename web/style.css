@@ -281,6 +281,10 @@ hr{
 
 /* Company */
 
+.company{
+    margin-bottom: 60px;
+}
+
 .company__content{
     text-align: center;
 }
@@ -296,6 +300,27 @@ hr{
     padding: 75px 47px;
 }
 
+/* Overview */
+
+.overview{
+    margin-bottom: 60px;
+}
+
+.overview__content{
+    text-align: center;
+}
+
+.overview__block-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.overview__image{
+    padding: 75px 47px;
+}
+
 
 @media (max-width: 1120px) {
     .landing__image{
@@ -304,6 +329,11 @@ hr{
     }
 
     .company__image{
+        width: 100%;
+        padding-block: 0;
+    }
+    
+    .overview__image{
         width: 100%;
         padding-block: 0;
     }
