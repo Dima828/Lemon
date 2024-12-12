@@ -11,6 +11,7 @@
     --color-dark-gray: #454C5F;
     --color-white-alt: #F6F6F9;
     --color-green: #BFE03E;
+    --color-dark-green: #2a514c;
     --color-green-alt: #EBFA9E;
 
     --transition: all .2s linear;
@@ -382,6 +383,77 @@ hr{
 
 .account__image{
     padding: 75px 47px;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    font-size: 13px;
+    line-height: 185%;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+.footer__top{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(240, 250, 248, 0.1);
+}
+
+.footer__top-content{
+    display: flex;
+    padding-top: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.top__icon{
+    display: flex;
+    column-gap: 16px;
+}
+
+.fa-brands{
+    padding: 10px;
+    color: var(--color-dark);
+    border: 1px solid var(--color-green-alt);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.fa-brands:hover{
+    background-color: var(--color-white-alt);
+}
+
+.footer__main{
+    padding-block: 40px;
+    display: flex;
+    column-gap: 44px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(240, 250, 248, 0.1);
+}
+
+.footer__list{
+    width: 279px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.footer__item-title{
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    color: var(--color-green-alt);
+
+}
+
+.footer__bottom-content{
+    padding-top: 30px;
+}
+
+.text__color-alt{
+    color: var(--color-green-alt);
 }
 
 @media (max-width: 1120px) {
